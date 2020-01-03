@@ -1,0 +1,163 @@
+body,
+html { height: 100%; }
+
+$bgColor: #021427;
+$main: #adadad;
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bgColor;
+}
+
+.pole-container{
+  margin-top: -97px;
+  width: 100px;
+      height: 475px;
+      background-color: none;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.top-one{
+      width: 115px;
+      height: 11px;
+      background-color: $main;
+      display: block;
+      border-radius: 0px 0px 18px 18px;
+      margin-bottom: 6px;
+    }
+
+    .top-two{
+      width: 115px;
+    height: 32px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: $main;
+    margin-bottom: 3px;
+    }
+
+    .top-two::after{
+          content: "";
+          width: 40px;
+          height: 40px;
+          background: $bgColor;
+          position: absolute;
+          top: 91px;
+          left: 95px;
+          border-radius: 29px;
+    }
+
+    .top-two::before{
+      content: "";
+    width: 40px;
+    height: 40px;
+    background: $bgColor;
+    position: absolute;
+    top: 91px;
+    left: -35px;
+    border-radius: 29px;
+    }
+
+    .top-three{
+      width: 40px;
+        height: 23px;
+        margin-bottom: 4px;
+        background-color: $main;
+        margin-top: -15px;
+    }
+
+    .top-four{
+      height: 141px;
+          width: 100px;
+          background-color: $main;
+          border-radius: 76px;
+    }
+
+.main-stipe-container{
+      width: 100px;
+      height: 401px;
+      background-color: white;
+      overflow: hidden;
+}
+
+.strips{
+  width: 300px;
+  height: 300px;
+  margin-left: -112px;
+    background-image: linear-gradient(0deg, #1500ff 12.5%, #F6F0CF 12.5%, #ffffff 25%, red 25%, red 37.5%, #fff 37.5%, #fff 50%, #1500ff 50%, #1500ff 62.5%, #ffffff 62.5%, #ffffff 75%, red 75%, red 87.5%, #fff 87.5%, #fff 100%);
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+  -webkit-animation: strips 100s linear infinite;
+  animation: strips 100s linear infinite;
+  -webkit-transform: rotate(155deg);
+  transform: rotate(141deg);
+}
+
+@keyframes strips {
+  to {
+    background-position: 0 -1000vh;
+  }
+}
+
+.bottom-one{
+      width: 115px;
+      height: 11px;
+      background-color: $main;
+      display: block;
+      border-radius: 18px 18px 0px 0px;
+    }
+
+  .white-space-one{
+      height: 9px;
+
+    }
+    .bottom-two{
+      width: 115px;
+height: 28px;
+border-radius: 0px 0px 0px 0px;
+background-color: $main;
+    }
+
+    .bottom-two::after{
+          content: "";
+          width: 40px;
+          height: 40px;
+          background: $bgColor;
+          position: absolute;
+          top: 456px;
+          left: 95px;
+          border-radius: 29px;
+    }
+
+    .bottom-two::before{
+      content: "";
+    width: 40px;
+    height: 40px;
+    background: $bgColor;
+    position: absolute;
+    top: 456px;
+    left: -35px;
+    border-radius: 29px;
+    }
+    .white-space-two{
+        height: 5px;
+    }
+
+
+
+
+
+    .bottom-three{
+      position: absolute;
+          height: 29px;
+          background-color: $main;
+          width: 88%;
+          top: 478px;
+          border-radius: 0px 0px 50px 50px;
+    }
+
+    img
